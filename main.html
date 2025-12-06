@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Quote Saver</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather&family=Montserrat&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Ayeee Thaaaa</h1>
+            <button id="openModalBtn" class="add-btn">+ New Quote</button>
+        </header>
+
+        <div id="quoteGrid" class="quote-grid">
+            </div>
+    </div>
+
+    <div id="quoteModal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h2>Create Quote</h2>
+            
+            <textarea id="quoteInput" placeholder="Type your quote here..."></textarea>
+            
+            <div class="customization-options">
+                <div class="option-group">
+                    <label>Tile Color</label>
+                    <input type="color" id="bgColorPicker" value="#fff4e6">
+                </div>
+                <div class="option-group">
+                    <label>Text Color</label>
+                    <input type="color" id="textColorPicker" value="#333333">
+                </div>
+                <div class="option-group">
+                    <label>Font Style</label>
+                    <select id="fontStyleSelect">
+                        <option value="'Montserrat', sans-serif">Modern (Sans)</option>
+                        <option value="'Merriweather', serif">Classic (Serif)</option>
+                        <option value="'Dancing Script', cursive">Handwritten</option>
+                        <option value="'Roboto Mono', monospace">Code Style</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="modal-actions">
+                <button id="cancelBtn" class="secondary-btn">Cancel</button>
+                <button id="saveBtn" class="primary-btn">Save Quote</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
